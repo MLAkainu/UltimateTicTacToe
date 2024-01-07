@@ -21,7 +21,7 @@ def eval_mini_board(state, board):
         [2, 4, 2],
         [3, 2, 3]
     ]
-    
+
     temp_result = state.game_result(board)
     if temp_result == state.player_to_move:
         return 24
@@ -158,32 +158,7 @@ def ultimate_move(cur_state):
 
 
 def select_move(cur_state, remain_time): 
-    # if cur_state.player_to_move == 1:
-    #     print(0)
-    #     return ultimate_move(cur_state)
-    # else:
-    #     print(1)
-    #     valid_moves = cur_state.get_valid_moves
-
-    #     cur_max = -np.inf
-    #     result_index = -1
-
-    #     if cur_state.previous_move == None:
-    #         depth_limit = 1
-    #     else:
-    #         depth_limit = 3
-        
-    #     if len(valid_moves) != 0:
-    #         for i in range(len(valid_moves)):
-    #             new_state = copy.deepcopy(cur_state)
-    #             new_state.act_move(valid_moves[i])
-    #             temp = minimax_alpha_beta(new_state, -np.inf, np.inf, 0, depth_limit)
-                
-    #             if temp > cur_max:
-    #                 cur_max = temp
-    #                 result_index = i
-    #         return valid_moves[result_index]
-    #     return None
+   
     valid_moves = cur_state.get_valid_moves
 
     cur_max = -np.inf
