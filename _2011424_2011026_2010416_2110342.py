@@ -21,6 +21,7 @@ def eval_mini_board(state, board):
         [2, 4, 2],
         [3, 2, 3]
     ]
+    
     temp_result = state.game_result(board)
     if temp_result == state.player_to_move:
         return 24
